@@ -27,7 +27,7 @@ if choice in ('1' , '2' , '3' , '4'):
     x=number1
     y=number2
     
-    if choice == '1':  #testa
+    if choice == '1':
         print (number1, "+", number2, "=", add(x, y))
         
     elif choice == '2':
@@ -39,5 +39,5 @@ if choice in ('1' , '2' , '3' , '4'):
     elif choice == '4':
         print(number1, "/", number2, "=", devide(x, y))
         
-        
-        
+else:
+    print("error")
