@@ -16,17 +16,17 @@ def devide(x, y):
 def powerOf(x,y):
     return x**y  #definition för alla räknesätt som ska användas
 
-manual = input("om du vill se manual skriv 1, om du vill börja använda programmet skriv 2: ")
+manual = input("för manualen skriv 1, för kalkylatorn skriv 2: ")
 if manual in ('1', '2'):
     if manual == '1':
-        print("hej")
+        print("Först kommer det fram de räknesätten som användaren kan välja mellan. När användaren sedan har valt räknesättet får den skriva in två tal som programmet räknar ut beroende på räknesättet som tidigare valts")
     elif manual == '2':
         print("Välj Räknesätt")
         print("1.addera")
         print("2.subbtrahera")
         print("3.multiplicera")
         print("4.dividera")
-        print("5.upphöjt")  #skriver upp vilka räknesätt som är med
+        print("5.upphöjt")  #skriver upp vilka räknesätt som användaren kan välja mellan
 
         choice = input("Välj räknesätt(1/2/3/4/5): ")   #användaren väljer räknesättet som den vill använda
         if choice in ('1' , '2' , '3' , '4', '5'):
