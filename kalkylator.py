@@ -14,12 +14,12 @@ def devide(x, y):
     return x / y
 
 def powerOf(x,y):
-    return x**y  #definition för alla räknesätt som ska användas
+    return x**y  #definition för alla räknesätt som kan användas
 
-manual = input("för manualen skriv 1, för kalkylatorn skriv 2: ")
+manual = input("för manualen skriv 1, för kalkylatorn skriv 2: ")  #användaren får välja mellan manualen och börja använda kalkylatorn
 if manual in ('1', '2'):
     if manual == '1':
-        print("Först kommer det fram de räknesätten som användaren kan välja mellan. När användaren sedan har valt räknesättet får den skriva in två tal som programmet räknar ut beroende på räknesättet som tidigare valts")
+        print("1. de räknesätt som kan används skrivs ut 2. Användaren väljer vilket räknesätt som ska användas 3. Användaren skriver ut två tal som räknas ut med valda räknesättet")
     elif manual == '2':
         print("Välj Räknesätt")
         print("1.addera")
@@ -50,5 +50,8 @@ if manual in ('1', '2'):
             elif choice == '5':
                 print(number1, "**", number2, "=", powerOf(x,y))     # om användaren väler upphöjt i är det den här koden som används
         
-            else:
-                print("ogiltigt räknesätt")     #om räknesättet är något annat än 1-5 skrivs detta ut
+        else:
+            print("ogiltigt räknesätt")     #om räknesättet är något annat än 1-5 skrivs detta ut
+            
+            
+            
